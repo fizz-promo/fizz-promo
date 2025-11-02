@@ -219,13 +219,46 @@
     &copy; 2025 UNAI7 | Not affiliated with Fizz. All trademarks belong to their respective owners.
   </footer>
 
-  <script>
-    function copyCode() {
-      const code = document.getElementById("codeText").textContent;
-      navigator.clipboard.writeText(code).then(() => {
-        alert("Referral code copied: " + code);
-      });
-    }
-  </script>
+<!-- ✅ Toast Notification Script -->
+<div id="toast" class="toast">Referral code copied: UNAI7</div>
+
+<script>
+  function copyCode() {
+    const code = document.getElementById("codeText").textContent;
+    navigator.clipboard.writeText(code).then(() => {
+      const toast = document.getElementById("toast");
+      toast.textContent = "Referral code copied: " + code;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 2500);
+    });
+  }
+</script>
+
+<style>
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #00b894;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.4s, bottom 0.4s;
+}
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 60px;
+}
+</style>
+
 </body>
 </html>
