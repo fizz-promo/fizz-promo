@@ -1,4 +1,4 @@
-User-agent: *
-Allow: /
+  User-agent: *
+  Allow: /
 
-Sitemap: https://fizz-promo.github.io/fizz-promo/sitemap.xml
+  Sitemap: https://fizz-promo.github.io/fizz-promo/sitemap.xml
