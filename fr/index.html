@@ -1,45 +1,49 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Code Promo Fizz UNAI7 – 40$ de Rabais sur Forfaits Fizz 5G</title>
+<!-- Google Search Console -->
+<meta name="google-site-verification" content="6KPXp8obStawRbuSCtbKVQ-D00a2y5TJiW5QcPZ2IHY" />
 
-<meta name="description" content="Utilisez le code promo Fizz UNAI7 et obtenez 40$ de rabais sur les forfaits mobiles ou Internet Fizz 5G. Sans contrat. Donnez vos données inutilisées." />
-
-<link rel="canonical" href="https://fizz-promo.github.io/fizz-promo/fr/" />
+<title>Fizz Promo Code UNAI7 – $40 Off Fizz 5G Plans (Canada)</title>
+<meta name="description" content="Get $40 off Fizz 5G mobile or internet plans with referral code UNAI7. Customize plans, gift data, no contracts." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://fizz-promo.github.io/fizz-promo/" />
 
 <!-- hreflang -->
 <link rel="alternate" hreflang="en-ca" href="https://fizz-promo.github.io/fizz-promo/" />
-<link rel="alternate" hreflang="fr-ca" href="https://fizz-promo.github.io/fizz-promo/fr/" />
+<link rel="alternate" hreflang="fr-ca" href="https://fizz-promo.github.io/fizz-promo/" />
 <link rel="alternate" hreflang="x-default" href="https://fizz-promo.github.io/fizz-promo/" />
 
 <!-- Open Graph -->
-<meta property="og:title" content="Code Promo Fizz UNAI7 – 40$ de Rabais" />
-<meta property="og:description" content="Fizz 5G – Créez votre forfait, donnez vos données et économisez 40$." />
+<meta property="og:title" content="Fizz Promo Code UNAI7 – $40 Off Fizz 5G Plans" />
+<meta property="og:description" content="Join Fizz 5G. Get $40 off. Customize your plan & gift data to others." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://fizz-promo.github.io/fizz-promo/fr/" />
+<meta property="og:url" content="https://fizz-promo.github.io/fizz-promo/" />
 
-<!-- GA4 -->
+<!-- Google Analytics GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HGIFWJHGYJ"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-2HGIFWJHGYJ', { page_language: 'fr' });
+gtag('config', 'G-2HGIFWJHGYJ');
 </script>
 
 <style>
-body{font-family:system-ui;background:#f9fafb;color:#111827;margin:0}
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont;margin:0;background:#f9fafb;color:#111827}
 .container{max-width:900px;margin:auto;padding:24px}
-.badge{background:#22c55e;color:#000;padding:6px 10px;border-radius:6px;font-weight:700;display:inline-block}
+.lang-switch{text-align:right;font-size:14px}
+.lang-switch button{border:none;background:none;font-weight:700;cursor:pointer}
+.badge{background:#22c55e;color:#000;padding:6px 10px;border-radius:6px;font-weight:700;display:inline-block;margin-bottom:12px}
 .promo-box{background:#fff;padding:20px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;margin:20px 0;box-shadow:0 6px 20px rgba(0,0,0,.08)}
 .promo-box span{font-size:1.5rem;font-weight:700}
-.promo-box button{padding:10px 14px;border:none;border-radius:6px;background:#2563eb;color:#fff;font-weight:600}
+.promo-box button{padding:10px 14px;border:none;border-radius:6px;background:#2563eb;color:#fff;font-weight:600;cursor:pointer}
 .cta{display:inline-block;margin-top:16px;padding:14px 22px;background:#22c55e;color:#000;font-weight:700;text-decoration:none;border-radius:8px}
 ul{margin-top:16px}
-#mobile-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:#111827;color:#fff;padding:12px;z-index:9999;justify-content:space-between}
+#mobile-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:#111827;color:#fff;padding:12px;z-index:9999;justify-content:space-between;align-items:center}
 #mobile-cta button,#mobile-cta a{background:#22c55e;color:#000;border:none;padding:8px 12px;border-radius:6px;font-weight:700;text-decoration:none}
 @media(max-width:768px){#mobile-cta{display:flex}}
 </style>
@@ -48,74 +52,153 @@ ul{margin-top:16px}
 <body>
 
 <div class="container">
-  <span class="badge">40$ de rabais Fizz 5G</span>
-
-  <h1>Code Promo Fizz : UNAI7</h1>
-
-  <p>
-    Profitez de <strong>40$ de rabais</strong> sur votre forfait mobile ou Internet Fizz.
-    Fizz offre maintenant la <strong>5G</strong>, des forfaits personnalisables et
-    la possibilité de <strong>donner vos données inutilisées</strong> à d’autres utilisateurs.
-  </p>
-
-  <div class="promo-box">
-    <span id="code">UNAI7</span>
-    <button onclick="copyCode()">Copier le code</button>
+  <div class="lang-switch">
+    <button onclick="setLang('en')">EN</button> | 
+    <button onclick="setLang('fr')">FR</button>
   </div>
 
-  <a id="join" class="cta" target="_blank" rel="noopener">
-    Rejoindre Fizz et économiser 40$
-  </a>
+  <span class="badge" id="badge"></span>
+  <h1 id="headline"></h1>
+  <p id="subheadline"></p>
 
-  <ul>
-    <li>📶 Réseau mobile Fizz 5G</li>
-    <li>🛠 Forfaits flexibles et personnalisables</li>
-    <li>🎁 Don de données mobiles à d’autres membres Fizz</li>
-    <li>💳 Sans contrat – prépayé</li>
-    <li>🇨🇦 Couverture partout au Canada</li>
-  </ul>
+  <div class="promo-box">
+    <span id="promo-code">UNAI7</span>
+    <button id="copy-code"></button>
+  </div>
+
+  <a id="join-fizz" class="cta" target="_blank" rel="noopener"></a>
+
+  <ul id="bullets"></ul>
 </div>
 
 <!-- Mobile CTA -->
 <div id="mobile-cta">
-  <span>40$ de rabais</span>
-  <button onclick="copyCode()">Copier</button>
-  <a id="mobileJoin" target="_blank">Rejoindre</a>
+  <span id="mobile-text"></span>
+  <button id="mobile-copy"></button>
+  <a id="mobile-join" target="_blank" rel="noopener">Join</a>
 </div>
 
-<!-- FAQ Schema FR -->
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"FAQPage",
- "mainEntity":[
-  {
-   "@type":"Question",
-   "name":"Comment obtenir 40$ de rabais chez Fizz?",
-   "acceptedAnswer":{"@type":"Answer","text":"Utilisez le code promo UNAI7 lors de votre inscription et recevez un crédit de 40$ après activation."}
-  },
-  {
-   "@type":"Question",
-   "name":"Fizz offre-t-il la 5G?",
-   "acceptedAnswer":{"@type":"Answer","text":"Oui, Fizz propose maintenant le réseau mobile 5G dans certaines régions du Canada."}
-  },
-  {
-   "@type":"Question",
-   "name":"Puis-je donner mes données mobiles?",
-   "acceptedAnswer":{"@type":"Answer","text":"Oui, Fizz permet de donner vos données mobiles inutilisées à d'autres utilisateurs Fizz."}
-  }
- ]
-}
-</script>
+<!-- FAQ Schema -->
+<script type="application/ld+json" id="faq-schema"></script>
 
 <script>
-function copyCode(){
- navigator.clipboard.writeText("UNAI7");
- gtag('event','promo_code_copy',{page_language:'fr'});
+/* ======================
+   CONTENT (EN / FR)
+   ====================== */
+const content={
+en:{
+ badge:"$40 OFF Fizz 5G",
+ h1A:"Get $40 Off Your Fizz Plan",
+ h1B:"Fizz 5G Plans + $40 Off",
+ subA:"Use referral code UNAI7 and save instantly on mobile or internet.",
+ subB:"Join Fizz 5G today and get a $40 bill credit.",
+ copy:"Copy Code",
+ join:"Join Fizz & Save $40",
+ mobile:"$40 OFF – Copy Code",
+ bullets:[
+  "📶 New Fizz 5G network",
+  "🛠 Build your own mobile plan",
+  "🎁 Gift unused data to other Fizz users",
+  "💳 Prepaid – no contracts",
+  "🇨🇦 Canada-wide coverage"
+ ],
+ faq:[
+  ["How do I get $40 off Fizz?","Use referral code UNAI7 when signing up for a new Fizz plan. You’ll receive a $40 bill credit after activation."],
+  ["Does Fizz support 5G?","Yes, Fizz now offers 5G mobile service in supported areas across Canada."],
+  ["Can I gift data on Fizz?","Yes. Fizz allows you to gift unused mobile data to other Fizz users through your account."],
+  ["Are Fizz plans contract-free?","Yes. All Fizz plans are prepaid with no contracts or hidden fees."]
+ ]
+},
+fr:{
+ badge:"40$ de rabais Fizz 5G",
+ h1A:"Obtenez 40$ de rabais chez Fizz",
+ h1B:"Forfaits Fizz 5G + 40$ de rabais",
+ subA:"Utilisez le code UNAI7 pour économiser sur votre forfait.",
+ subB:"Abonnez-vous à Fizz 5G et recevez un crédit de 40$.",
+ copy:"Copier le code",
+ join:"Rejoindre Fizz – 40$ de rabais",
+ mobile:"40$ de rabais – Copier",
+ bullets:[
+  "📶 Nouveau réseau Fizz 5G",
+  "🛠 Créez votre propre forfait mobile",
+  "🎁 Donnez vos données inutilisées à d’autres utilisateurs Fizz",
+  "💳 Prépayé – sans contrat",
+  "🇨🇦 Couverture partout au Canada"
+ ],
+ faq:[
+  ["Comment obtenir 40$ de rabais chez Fizz?","Utilisez le code UNAI7 lors de votre inscription et recevez un crédit de 40$."],
+  ["Fizz offre-t-il la 5G?","Oui, Fizz propose maintenant le service mobile 5G dans certaines régions."],
+  ["Puis-je donner mes données avec Fizz?","Oui. Fizz permet de donner des données mobiles inutilisées à d’autres membres Fizz."],
+  ["Les forfaits Fizz ont-ils un contrat?","Non. Les forfaits Fizz sont prépayés, sans contrat ni frais cachés."]
+ ]
 }
-const url="https://fizz.ca?utm_source=seo&utm_campaign=fizz_unai7_fr";
-document.getElementById("join").href=url;
-document.getElementById("mobileJoin").href=url;
+};
+
+/* ======================
+   LANGUAGE + A/B LOGIC
+   ====================== */
+function detectLang(){
+ return localStorage.getItem("lang") ||
+        (navigator.language.startsWith("fr")?"fr":"en");
+}
+function setLang(l){
+ localStorage.setItem("lang",l);
+ render(l);
+ gtag('event','language_switch',{event_label:l});
+}
+function render(lang){
+ document.documentElement.lang=lang;
+ const c=content[lang];
+ document.getElementById("badge").innerText=c.badge;
+
+ let v=localStorage.getItem("ab");
+ if(!v){v=Math.random()<0.5?"A":"B";localStorage.setItem("ab",v);}
+ document.getElementById("headline").innerText=v==="A"?c.h1A:c.h1B;
+ document.getElementById("subheadline").innerText=v==="A"?c.subA:c.subB;
+
+ document.getElementById("copy-code").innerText=c.copy;
+ document.getElementById("join-fizz").innerText=c.join;
+ document.getElementById("mobile-text").innerText=c.mobile;
+ document.getElementById("mobile-copy").innerText=c.copy;
+
+ const ul=document.getElementById("bullets"); ul.innerHTML="";
+ c.bullets.forEach(b=>{const li=document.createElement("li");li.innerText=b;ul.appendChild(li);});
+
+ document.getElementById("faq-schema").innerText=JSON.stringify({
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":c.faq.map(q=>({
+    "@type":"Question",
+    "name":q[0],
+    "acceptedAnswer":{"@type":"Answer","text":q[1]}
+  }))
+ });
+}
+
+/* ======================
+   EVENTS + UTM
+   ====================== */
+document.addEventListener("DOMContentLoaded",()=>{
+ const lang=detectLang(); render(lang);
+
+ const ref=document.referrer.toLowerCase();
+ let src="direct";
+ if(ref.includes("twitter")||ref.includes("x.com"))src="twitter";
+ if(ref.includes("reddit"))src="reddit";
+ if(ref.includes("google"))src="google";
+
+ const url=`https://fizz.ca?utm_source=${src}&utm_campaign=fizz_unai7`;
+ join_fizz.href=mobile_join.href=url;
+
+ copy_code.onclick=mobile_copy.onclick=()=>{
+  navigator.clipboard.writeText("UNAI7");
+  gtag('event','promo_code_copy',{event_label:lang});
+ };
+
+ join_fizz.onclick=mobile_join.onclick=()=>{
+  gtag('event','join_fizz_click',{event_label:lang});
+ };
+});
 </script>
 
 </body>
