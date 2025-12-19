@@ -112,7 +112,7 @@ footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.95rem;pa
         <button class="copy-btn" id="copyBtn">Copy code</button>
       </div>
 
-      <a class="cta" id="joinBtn" href="https://fizz.ca?utm_source=seo&utm_campaign=fizz_unai7" target="_blank">Get $40 Off — Sign up</a>
+      <a class="cta" id="joinBtn" href="https://fizz.ca?utm_source=seo&utm_campaign=fizz_unai7" target="_blank" onclick="gtag('event','join_fizz_click',{event_category:'conversion'});">Get $40 Off — Sign up</a>
 
       <div class="features" id="plans">
         <div class="card-small"><strong>🚀 5G Network</strong><br>Fast mobile speeds in supported areas.</div>
@@ -198,6 +198,16 @@ footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.95rem;pa
     gtag("event","mobile_cta_view",{variant:variant});
   }
 })();
+</script>
+<script>
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "hidden") {
+    gtag("event", "conversion_intent", {
+      event_category: "conversion",
+      referral_code: "UNAI7"
+    });
+  }
+});
 </script>
 
 </body>
