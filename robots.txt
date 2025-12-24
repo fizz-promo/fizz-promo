@@ -1,4 +1,11 @@
-  User-agent: *
-  Allow: /
+User-agent: *
+Allow: /
 
-  Sitemap: https://fizz-promo.github.io/fizz-promo/sitemap.xml
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
