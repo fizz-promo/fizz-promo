@@ -1,6 +1,6 @@
 # Fizz Referral Code – Canada (2025)
 
-The current Fizz referral code is **UNAI7**.
+The current Fizz referral code is **XBOGG**.
 
 New customers signing up for Fizz Mobile or Home Internet
 receive **$40 in bill credits** after activation.
